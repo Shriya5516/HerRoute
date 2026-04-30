@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - HerRoute</title>
+    <title>Login - HerRoute</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -13,113 +13,78 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body class="home-page">
+<video autoplay muted loop class="bg-video">
+    <source src="animate.mp4" type="video/mp4">
+</video>
+<body class="login-page">
 
-<!-- NAVBAR -->
-<header class="navbar">
-    <div class="logo">
-        <img src="images/logoo.png" alt="Logo">
+
+<div class="login-container">
+
+    <!-- LEFT SIDE -->
+    <div class="login-left">
+
+        <div class="logo-section">
+            <img src="images/logoo.png" alt="Logo">
+        </div>
+
+       
+
+    </div>
     
-    </div>
 
-    <nav class="nav-links">
-        <a href="index.html" class="active">Home</a>
-        <a href="explore.html">Explore</a>
-        <a href="Itinerary.html">Plan Trip</a>
-        <a href="emergencycontacts.html">Emergency</a>
-        <a href="safetytips.html">Safety</a>
-    </nav>
+    <!-- RIGHT SIDE -->
+    <div class="login-right">
 
-    <div class="nav-icons">
-        <i class="fa-regular fa-bell"></i>
-        <a href="profile.html">
-    <img src="images/pfp.jpg" alt="User" class="profile-pic">
-</a>
-    </div>
-</header>
+        <div class="login-box">
 
-<!-- HERO SECTION -->
-<section class="hero">
+            <h2>Welcome Back!</h2>
+            <p class="subtitle">Login to continue your journey</p>
 
-    <div class="hero-content">
-        <h2>Hi, Ananya! 👋</h2>
-        <p>Where do you want to go today?</p>
+            <!-- Form -->
+            <form>
 
-        <!-- Search -->
-        <div class="search-box">
-            <input type="text" placeholder="Search destinations, places, things to do...">
-            <button><i class="fa-solid fa-magnifying-glass"></i> Search</button>
-        </div>
-    </div>
+                <label>Email or Phone</label>
+                <input type="text" placeholder="Enter email or phone">
 
-   
+                <label>Password</label>
+                <input type="password" placeholder="Enter password">
 
-</section>
+                <div class="forgot">
+                    <a href="#">Forgot Password?</a>
+                </div>
 
-<!-- QUICK CARDS -->
-<section class="quick-cards">
+               
+                <button type="button" onclick="window.location.href='index.html'" class="login-btn">
+    Login
+</button>
 
-    <div class="card">
-        <i class="fa-solid fa-location-dot icon1"></i>
-        <h3>Safe Places</h3>
-        <p>Discover verified safe destinations</p>
-        <button><a href="explore.html" class="card-btn">View Places</a></button>
-    </div>
+            </form>
 
-    <div class="card">
-       <i class="fa-solid fa-calendar icon2"></i>
-        <h3>Plan Your Trip</h3>
-        <p>Plan and organize your itinerary</p>
-        <button><a href="Itinerary.html" class="card-btn">Plan Now</a></button>
-    </div>
+            <!-- Divider -->
+            <p class="divider">or continue with</p>
 
-    <div class="card">
-        <i class="fa-solid fa-bell icon3"></i>
-        <h3>Emergency</h3>
-        <p>Quick access to help & contacts</p>
-        <button><a href="emergencycontacts.html" class="card-btn">Open</a></button>
-        
-    </div>
+            <!-- Social Login -->
+            <div class="social-login">
+                <button class="google-btn">
+                    <i class="fa-brands fa-google"></i> Google
+                </button>
 
-</section>
+                <button class="facebook-btn">
+                    <i class="fa-brands fa-facebook"></i> Facebook
+                </button>
+            </div>
 
-<!-- DESTINATIONS -->
-<section class="destinations">
+            <!-- Signup -->
+            <p class="signup-text">
+                Don’t have an account? <a href="signup.html">Sign up</a>
+            </p>
 
-    <div class="section-header">
-        <h3>Popular Safe Destinations</h3>
-        <a href="explore.html">View all</a>
-    </div>
-
-    <div class="destination-cards">
-
-        <div class="destination">
-            <img src="images/Goa.png" alt="Goa">
-            <h4>Goa</h4>
-            <p>⭐ 4.8 (235)</p>
-        </div>
-
-        <div class="destination">
-            <img src="images/Manali.jpeg" alt="Manali">
-            <h4>Manali</h4>
-            <p>⭐ 4.7 (210)</p>
-        </div>
-
-        <div class="destination">
-            <img src="images/varanasi.jpg" alt="varanasi">
-            <h4>Varanasi</h4>
-            <p>⭐ 4.6 (185)</p>
-        </div>
-
-        <div class="destination">
-            <img src="images/ooty.png" alt="Ooty">
-            <h4>Ooty</h4>
-            <p>⭐ 4.5 (136)</p>
         </div>
 
     </div>
 
-</section>
+</div>
 
 </body>
 </html>
