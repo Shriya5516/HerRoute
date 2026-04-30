@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore - HerRoute</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="explore-page">
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">
+        <img src="images/logoo.png">
+        
+    </div>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="explore.html" class="active">Explore</a>
+        <a href="Itinerary.html">Plan Trip</a>
+        <a href="emergencycontacts.html">Emergency</a>
+        <a href="safetytips.html">Safety</a>
+    </nav>
+
+    <div class="nav-icons">
+        <i class="fa-regular fa-bell"></i>
+        <a href="profile.html">
+            <img src="images/pfp.jpg" class="profile-pic">
+        </a>
+    </div>
+</header>
+
+<!-- MAIN -->
+<div class="explore-container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <h3>Categories</h3>
+
+        <ul class="category-list">
+            <li class="active">All Destinations</li>
+            <li>Mountains</li>
+            <li>Beaches</li>
+            <li>Cities</li>
+            <li>Heritage</li>
+            <li>Adventure</li>
+        </ul>
+
+        <h3>Safety Rating</h3>
+
+        <div class="ratings">
+            <label><input type="checkbox"> 4.5 & above</label>
+            <label><input type="checkbox"> 4.0 & above</label>
+            <label><input type="checkbox"> 3.5 & above</label>
+        </div>
+
+    </aside>
+
+    <!-- CONTENT -->
+    <section class="explore-content">
+
+        <h2>Safe Destinations</h2>
+
+        <div class="destination-grid">
+
+            <!-- CARD 1 -->
+             <a href="locationdetails.html" class="card-link">
+            <div class="destination-card">
+                <img src="images/Goa.png">
+                 <i class="fa-regular fa-heart heart-icon"></i>
+                <div class="card-info">
+                    <h4>Goa</h4>
+                    <p>Beaches</p>
+                    <span>⭐ 4.8 (235)</span>
+                </div>
+            </div>
+            </a>
+
+            <!-- CARD 2 -->
+            <div class="destination-card">
+                <img src="images/Manali.jpeg">
+                 <i class="fa-regular fa-heart heart-icon"></i>
+                <div class="card-info">
+                    <h4>Manali</h4>
+                    <p>Mountains</p>
+                    <span>⭐ 4.7 (210)</span>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="destination-card">
+                <img src="images/varanasi.jpg".jpg">
+                 <i class="fa-regular fa-heart heart-icon"></i>
+                <div class="card-info">
+                    <h4>Varanasi</h4>
+                    <p>Heritage</p>
+                    <span>⭐ 4.6 (185)</span>
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="destination-card">
+                <img src="images/ooty.png">
+                 <i class="fa-regular fa-heart heart-icon"></i>
+                <div class="card-info">
+                    <h4>Ooty</h4>
+                    <p>Hills</p>
+                    <span>⭐ 4.5 (128)</span>
+                </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="destination-card">
+                <img src="images/kerala.jpg">
+                 <i class="fa-regular fa-heart heart-icon"></i>
+                <div class="card-info">
+                    <h4>Kerala</h4>
+                    <p>Backwaters</p>
+                    <span>⭐ 4.6 (164)</span>
+                </div>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="destination-card">
+                <img src="images/Rishikesh.jpg">
+                 <i class="fa-regular fa-heart heart-icon"></i>
+                <div class="card-info">
+                    <h4>Rishikesh</h4>
+                    <p>Adventure</p>
+                    <span>⭐ 4.5 (198)</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+<script>
+    const hearts = document.querySelectorAll(".heart-icon");
+
+    hearts.forEach(heart => {
+        heart.addEventListener("click", () => {
+
+            // toggle class
+            heart.classList.toggle("liked");
+
+            // change icon type
+            if (heart.classList.contains("liked")) {
+                heart.classList.remove("fa-regular");
+                heart.classList.add("fa-solid");
+            } else {
+                heart.classList.remove("fa-solid");
+                heart.classList.add("fa-regular");
+            }
+
+        });
+    });
+</script>
+
+</body>
+</html>

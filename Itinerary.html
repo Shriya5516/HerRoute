@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HerRoute</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="itinerary-page">
+
+<!-- Navbar -->
+<header class="navbar">
+    <div class="logo">
+    <img src="images/logoo.png">
+</div>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="Itinerary.html" class="active">Plan Trip</a>
+       <a href="emergencycontacts.html">Emergency</a>
+        <a href="safetytips.html">Tips</a>
+    </nav>
+    
+<div class="nav-right">
+    <i class="fa-solid fa-bell"></i>
+    <a href="profile.html">
+    <img src="images/pfp.jpg" alt="User">
+</a>
+</div>
+</header>
+
+<!-- Main Section -->
+<section class="container">
+
+    <h2>My Itinerary</h2>
+
+    <!-- Top Inputs -->
+    <div class="top-inputs">
+        <div class="input-group">
+            <label>Trip Name</label>
+            <input type="text" value="Goa Trip">
+        </div>
+
+        <div class="input-group">
+            <label>Travel Dates</label>
+            <input type="text" value="10 May 2026 - 15 May 2026" >
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="itinerary-content">
+
+        <!-- Left Sidebar Days -->
+        <div class="days-sidebar">
+            <button class="day active">Day 1 <span>10 May</span></button>
+            <button class="day">Day 2 <span>11 May</span></button>
+            <button class="day">Day 3 <span>12 May</span></button>
+            <button class="day">Day 4 <span>13 May</span></button>
+            <button class="day">Day 5 <span>14 May</span></button>
+
+            <button class="add-day">+ Add Day</button>
+        </div>
+
+        <!-- Middle Content -->
+        <div class="day-details">
+
+            <div class="day-header">
+                <h3>Day 1 - 10 May 2026 </h3>
+                <button class="add-activity">+ Add Activity</button>
+            </div>
+
+            <!-- Activities -->
+            <div class="activity">
+                <div class="activity-info">
+                    <h4>Arrive in Goa</h4>
+                    <p>Reach Goa & check-in to hotel</p>
+                </div>
+                <div class="activity-time">10:00 AM</div>
+            </div>
+
+            <div class="activity">
+                <div class="activity-info">
+                    <h4>Baga Beach</h4>
+                    <p>Relax and enjoy the beach</p>
+                </div>
+                <div class="activity-time">04:00 PM</div>
+            </div>
+
+            <div class="activity">
+                <div class="activity-info">
+                    <h4>Dinner at Britto's</h4>
+                    <p>Try local Goan food</p>
+                </div>
+                <div class="activity-time">08:00 PM</div>
+            </div>
+
+        </div>
+
+        <!-- Right Illustration -->
+        <div class="illustration">
+            <img src="images/woman.png" alt="Travel Illustration">
+        </div>
+
+    </div>
+
+</section>
+    
+</body>
+</html>
